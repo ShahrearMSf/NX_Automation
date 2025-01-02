@@ -197,7 +197,7 @@ Abu Hurayra - [@hurayraiit](https://twitter.com/hurayraiit) - hurayraiit@gmail.c
 <br>
 Muammar Shahrear - [@Muammar Shahrear](https://www.linkedin.com/in/muammarshahrear/) - shahrearmuammar@gmail.com
 
-Project Link: [https://github.com/ShahrearMSf/BDS_Automation](https://github.com/ShahrearMSf/NX_Automation)
+Project Link: [https://github.com/ShahrearMSf/NX_Automation](https://github.com/ShahrearMSf/NX_Automation)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -215,16 +215,16 @@ Use this space to list resources you find helpful and would like to give credit 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/ShahrearMSf/BDS_Automation.svg?style=for-the-badge
-[contributors-url]: https://github.com/ShahrearMSf/BDS_Automation/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/ShahrearMSf/BDS_Automation.svg?style=for-the-badge
-[forks-url]: https://github.com/ShahrearMSf/BDS_Automation/network/members
-[stars-shield]: https://img.shields.io/github/stars/ShahrearMSf/BDS_Automation.svg?style=for-the-badge
-[stars-url]: https://github.com/ShahrearMSf/BDS_Automation/stargazers
-[issues-shield]: https://img.shields.io/github/issues/ShahrearMSf/BDS_Automation.svg?style=for-the-badge
-[issues-url]: https://github.com/ShahrearMSf/BDS_Automation/issues
-[license-shield]: https://img.shields.io/github/license/ShahrearMSf/BDS_Automation.svg?style=for-the-badge
-[license-url]: https://github.com/ShahrearMSf/BDS_Automation/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/ShahrearMSf/NX_Automation.svg?style=for-the-badge
+[contributors-url]: https://github.com/ShahrearMSf/NX_Automation/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/ShahrearMSf/NX_Automation.svg?style=for-the-badge
+[forks-url]: https://github.com/ShahrearMSf/NX_Automation/network/members
+[stars-shield]: https://img.shields.io/github/stars/ShahrearMSf/NX_Automation.svg?style=for-the-badge
+[stars-url]: https://github.com/ShahrearMSf/NX_Automation/stargazers
+[issues-shield]: https://img.shields.io/github/issues/ShahrearMSf/NX_Automation.svg?style=for-the-badge
+[issues-url]: https://github.com/ShahrearMSf/NX_Automation/issues
+[license-shield]: https://img.shields.io/github/license/ShahrearMSf/NX_Automation.svg?style=for-the-badge
+[license-url]: https://github.com/ShahrearMSf/NX_Automation/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/hurayraiit
 [product-screenshot]: images/screenshot.png
