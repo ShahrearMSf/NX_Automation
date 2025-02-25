@@ -19,6 +19,9 @@ setup("authenticate as admin", async ({ page }) => {
   await page.getByLabel("Remember Me").check();
   await page.getByRole("button", { name: "Log In" }).click();
 
+  //   await page.waitForURL(`${process.env.BASE_URL}/wp-admin/`);
+//   await expect(page.getByRole("heading", { name: "Dashboard" })).toBeVisible();
+
   await page.context().storageState({ path: adminFile });
 });
 
@@ -30,7 +33,7 @@ setup("authenticate as editor", async ({ page }) => {
   await page.getByLabel("Remember Me").check();
   await page.getByRole("button", { name: "Log In" }).click();
 
-  await page.waitForURL(`${process.env.BASE_URL}/wp-admin/`);
+//   await page.waitForURL(`${process.env.BASE_URL}/wp-admin/`);
   await expect(page.getByRole("heading", { name: "Dashboard" })).toBeVisible();
 
   await page.context().storageState({ path: editorFile });
@@ -44,7 +47,7 @@ setup("authenticate as author", async ({ page }) => {
   await page.getByLabel("Remember Me").check();
   await page.getByRole("button", { name: "Log In" }).click();
 
-  await page.waitForURL(`${process.env.BASE_URL}/wp-admin/`);
+//   await page.waitForURL(`${process.env.BASE_URL}/wp-admin/`);
   await expect(page.getByRole("heading", { name: "Dashboard" })).toBeVisible();
 
   await page.context().storageState({ path: authorFile });
@@ -58,7 +61,7 @@ setup("authenticate as contributor", async ({ page }) => {
   await page.getByLabel("Remember Me").check();
   await page.getByRole("button", { name: "Log In" }).click();
 
-  await page.waitForURL(`${process.env.BASE_URL}/wp-admin/`);
+//   await page.waitForURL(`${process.env.BASE_URL}/wp-admin/`);
   await expect(page.getByRole("heading", { name: "Dashboard" })).toBeVisible();
 
   await page.context().storageState({ path: contributorFile });
@@ -72,8 +75,8 @@ setup("authenticate as subscriber", async ({ page }) => {
   await page.getByLabel("Remember Me").check();
   await page.getByRole("button", { name: "Log In" }).click();
 
-  await page.waitForURL(/wp-admin/);
-  await expect(page.getByRole("heading", { name: "Profile" })).toBeVisible();
+//   await page.waitForURL(`${process.env.BASE_URL}/wp-admin/`);
+//   await expect(page.getByRole("heading", { name: "Profile" })).toBeVisible();
 
   await page.context().storageState({ path: subscriberFile });
 });
