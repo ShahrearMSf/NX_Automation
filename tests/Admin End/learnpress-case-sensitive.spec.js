@@ -57,9 +57,9 @@ test.describe("LearnPress url needs to be written properly", () => {
     });
 
     if (imageSrc === `${baseUrl}/wp-content/plugins/notificationx/assets/admin/images/extensions/sources/_learnpress.png`) {
-      console.log(" ✅ Test 2 Passed: LearnPress image is correct.");
+      console.log(" ✅ LearnPress image is correct.");
     } else {
-      console.log(" ❌ Test 2 Failed: LearnPress image source mismatch.");
+      console.log(" ❌ LearnPress image source mismatch.");
     }
   });
 
@@ -75,9 +75,9 @@ test.describe("LearnPress url needs to be written properly", () => {
     });
 
     if (imageSrc === `${baseUrl}/wp-content/plugins/notificationx/assets/admin/images/extensions/sources/_learnpress.png`) {
-      console.log(" ✅ Test 3 Passed: LearnPress image is correct.");
+      console.log(" ✅ LearnPress image is correct.");
     } else {
-      console.log(" ❌ Test 3 Failed: LearnPress image source mismatch.");
+      console.log(" ❌ LearnPress image source mismatch.");
     }
   });
 });
