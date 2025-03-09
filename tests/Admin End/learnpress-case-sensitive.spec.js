@@ -1,3 +1,5 @@
+//these 3 tests will always pass https://d.pr/i/oNcYSy
+
 import { test, expect } from "@playwright/test";
 
 // Ensure to load environment variables before running tests
