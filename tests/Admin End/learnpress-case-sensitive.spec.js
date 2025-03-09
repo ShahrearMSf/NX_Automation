@@ -1,4 +1,6 @@
 //these 3 tests will always pass https://d.pr/i/oNcYSy
+//check the logs for getting output whether okay or not okay
+
 
 import { test, expect } from "@playwright/test";
 
