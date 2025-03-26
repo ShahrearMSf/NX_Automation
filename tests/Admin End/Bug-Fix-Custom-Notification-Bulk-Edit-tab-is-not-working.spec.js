@@ -17,7 +17,7 @@ test.describe("Bug Fix | Custom Notification | Bulk Edit tab is not working", ()
     page = await adminContext.newPage();
   });
 
-  test("aaaaaa", async () => {
+  test("Bug Fix | Custom Notification | Bulk Edit tab is not working", async () => {
   await page.goto("/wp-admin/admin.php?page=nx-edit");
     // await page.waitForTimeout(5000);
   
