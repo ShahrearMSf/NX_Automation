@@ -48,7 +48,7 @@ test('theme based tests 1', async ({ page }) => {
   await adminPage.locator('div').filter({ hasText: /^Add New$/ }).locator('a').click();
   
   await adminPage.locator('span').filter({ hasText: /^Source$/ }).click();
-  await adminPage.locator('div:nth-child(3) > .wprf-input-radio-option > .wprf-input-label > .wprf-input-image').first().click();
+  // await adminPage.locator('div:nth-child(3) > .wprf-input-radio-option > .wprf-input-label > .wprf-input-image').first().click();
   await adminPage.getByRole('button', { name: 'Next' }).click();
   await adminPage.locator('span').filter({ hasText: 'For Mobile' }).click();
   await adminPage.locator('#responsive_themes > .wprf-section-fields > div:nth-child(2) > .wprf-control-field > .wprf-control > .wprf-row > div:nth-child(2) > .wprf-input-radio-option > .wprf-input-label > .wprf-input-image').click();
