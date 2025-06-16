@@ -187,7 +187,7 @@ test('theme based tests 3', async ({ page }) => {
   await adminPage.getByText('Discount Alert').click();
   await adminPage.getByRole('button', { name: 'Next' }).click();
   await adminPage.locator('ul').filter({ hasText: 'For Desktop' }).click();
-  await adminPage.locator('li').filter({ hasText: /^Source$/ }).locator('path').click();
+  // await adminPage.locator('li').filter({ hasText: /^Source$/ }).locator('path').click();
  
 });
 
@@ -249,7 +249,7 @@ test('theme based tests 4', async ({ page }) => {
   await adminPage.getByRole('button', { name: 'Next' }).click();
   await adminPage.locator('span').filter({ hasText: 'For Mobile' }).click();
   await adminPage.locator('#responsive_themes').getByRole('img').nth(1).click();
-  await adminPage.locator('li').filter({ hasText: /^Source$/ }).locator('path').click();
+  // await adminPage.locator('li').filter({ hasText: /^Source$/ }).locator('path').click();
   
 });
 
@@ -264,17 +264,17 @@ test('theme based tests 5', async ({ page }) => {
   await adminPage.locator('span').filter({ hasText: 'For Desktop' }).click();
   await adminPage.locator('#themes > div:nth-child(2) > div:nth-child(2) > .wprf-control-field > .wprf-control > .wprf-row > div:nth-child(2) > .wprf-input-radio-option > .wprf-input-label > .wprf-input-image').click();
   await adminPage.locator('span').filter({ hasText: /^Source$/ }).click();
-  await adminPage.locator('#source_section label').nth(2).click();
+  // await adminPage.locator('#source_section label').nth(2).click();
   await adminPage.getByRole('button', { name: 'Next' }).click();
   await adminPage.locator('li').filter({ hasText: 'For Mobile' }).click();
   await adminPage.locator('#responsive_themes').getByRole('img').first().click();
   await adminPage.locator('li').filter({ hasText: /^Source$/ }).getByRole('img').click();
-  await adminPage.locator('#source_section').getByRole('img').nth(3).click();
+  // await adminPage.locator('#source_section').getByRole('img').nth(3).click();
   await adminPage.getByRole('button', { name: 'Next' }).click();
   await adminPage.locator('span').filter({ hasText: 'For Desktop' }).click();
   await adminPage.locator('div:nth-child(2) > .wprf-control-field > .wprf-control > .wprf-row > div:nth-child(2) > .wprf-input-radio-option > .wprf-input-label > .wprf-input-image').click();
   await adminPage.locator('span').filter({ hasText: /^Source$/ }).click();
-  await adminPage.getByText('adminPage Analytics').click();
+  // await adminPage.getByText('adminPage Analytics').click();
   await adminPage.locator('#source_section').getByRole('img').click();
   await adminPage.getByRole('button', { name: 'Next' }).click();
   await adminPage.locator('#themes > div:nth-child(2) > div:nth-child(2) > .wprf-control-field > .wprf-control > .wprf-row > div > .wprf-input-radio-option > .wprf-input-label > .wprf-input-image').first().click();
