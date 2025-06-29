@@ -28,6 +28,7 @@ test('theme based tests 1', async ({ page }) => {
   await adminPage.locator('.wprf-input-image').first().click();
 });
 
+
   test('theme based tests 2', async ({ page }) => {
 
   await adminPage.goto("/wp-admin/admin.php?page=nx-dashboard");
@@ -41,6 +42,15 @@ test('theme based tests 1', async ({ page }) => {
   await adminPage.locator('#type_section').getByText('Sales Notification').click();
   await adminPage.getByRole('button', { name: 'Next' }).click();
   await adminPage.locator('li').filter({ hasText: 'For Mobile' }).click();
+  });
+
+
+  test('theme based tests 2.1', async ({ page }) => {
+
+  await adminPage.goto("/wp-admin/admin.php?page=nx-dashboard");
+  await adminPage.locator('div').filter({ hasText: /^Add New$/ }).locator('a').click();
+
+
   await adminPage.locator('div:nth-child(2) > .wprf-control-field > .wprf-control > .wprf-row > div > .wprf-input-radio-option > .wprf-input-label > .wprf-input-image').first().click();
   await adminPage.locator('span').filter({ hasText: /^Source$/ }).click();
   await adminPage.locator('div:nth-child(2) > .wprf-input-radio-option > .wprf-input-label > .wprf-input-image').first().click();
@@ -48,6 +58,7 @@ test('theme based tests 1', async ({ page }) => {
   await adminPage.locator('span').filter({ hasText: 'For Desktop' }).click();
   await adminPage.locator('#themes > div:nth-child(2) > div:nth-child(2) > .wprf-control-field > .wprf-control > .wprf-row > div:nth-child(2) > .wprf-input-radio-option > .wprf-input-label > .wprf-input-image').click();
 });
+
   
   test('theme based tests 3', async ({ page }) => {
 
@@ -161,12 +172,22 @@ test('theme based tests 10', async ({ page }) => {
   await adminPage.getByText('Notification Bar').click();
   await adminPage.getByRole('button', { name: 'Next' }).click();
   await adminPage.locator('#themes').getByRole('img').nth(1).click();
+});
+
+
+test('theme based tests 10.1', async ({ page }) => {
+
+  await adminPage.goto("/wp-admin/admin.php?page=nx-dashboard");
+  await adminPage.locator('div').filter({ hasText: /^Add New$/ }).locator('a').click();
+
+
   await adminPage.locator('li').filter({ hasText: /^Source$/ }).click();
   await adminPage.locator('#type_section').getByText('Reviews').click();
   await adminPage.getByRole('button', { name: 'Next' }).click();
   await adminPage.locator('span').filter({ hasText: 'For Mobile' }).click();
   await adminPage.locator('div:nth-child(2) > .wprf-control-field > .wprf-control > .wprf-row > div:nth-child(2) > .wprf-input-radio-option > .wprf-input-label > .wprf-input-image').click();
 });
+
 
 test('theme based tests 11', async ({ page }) => {
 
@@ -193,12 +214,22 @@ test('theme based tests 12', async ({ page }) => {
   await adminPage.getByRole('button', { name: 'Next' }).click();
   await adminPage.locator('span').filter({ hasText: 'For Mobile' }).click();
   await adminPage.locator('div:nth-child(2) > .wprf-control-field > .wprf-control > .wprf-row > div > .wprf-input-radio-option > .wprf-input-label > .wprf-input-image').first().click();
+});
+
+test('theme based tests 12.1', async ({ page }) => {
+
+  await adminPage.goto("/wp-admin/admin.php?page=nx-dashboard");
+  await adminPage.locator('div').filter({ hasText: /^Add New$/ }).locator('a').click();
+ 
+ 
+ 
   await adminPage.locator('li').filter({ hasText: /^Source$/ }).click();
   // await adminPage.locator('div:nth-child(4) > .wprf-input-radio-option > .wprf-input-label > .wprf-input-image').first().click();
   await adminPage.getByRole('button', { name: 'Next' }).click();
   await adminPage.locator('span').filter({ hasText: 'For Desktop' }).click();
   await adminPage.locator('div:nth-child(2) > .wprf-control-field > .wprf-control > .wprf-row > div:nth-child(2) > .wprf-input-radio-option > .wprf-input-label > .wprf-input-image').click();
 });
+
 
 test('theme based tests 13', async ({ page }) => {
 
@@ -228,12 +259,23 @@ test('theme based tests 14', async ({ page }) => {
   await adminPage.getByRole('button', { name: 'Next' }).click();
   await adminPage.locator('span').filter({ hasText: 'For Desktop' }).click();
   await adminPage.locator('div:nth-child(2) > .wprf-control-field > .wprf-control > .wprf-row > div:nth-child(2) > .wprf-input-radio-option > .wprf-input-label > .wprf-input-image').click();
+});
+
+test('theme based tests 14.1', async ({ page }) => {
+
+  await adminPage.goto("/wp-admin/admin.php?page=nx-dashboard");
+  await adminPage.locator('div').filter({ hasText: /^Add New$/ }).locator('a').click();
+  
+  
+  
   await adminPage.locator('li').filter({ hasText: /^Source$/ }).click();
   await adminPage.getByText('Contact Form').click();
   await adminPage.getByRole('button', { name: 'Next' }).click();
   await adminPage.locator('span').filter({ hasText: 'For Mobile' }).click();
   await adminPage.locator('#responsive_themes').getByRole('img').nth(1).click();
 });
+
+
 
   test('theme based tests 15', async ({ page }) => {
 
@@ -328,6 +370,15 @@ test('theme based tests 21', async ({ page }) => {
   // await adminPage.locator('#source_section').getByRole('img').nth(1).click();
   await adminPage.getByRole('button', { name: 'Next' }).click();
   await adminPage.locator('li').filter({ hasText: 'For Desktop' }).click();
+});
+
+test('theme based tests 21.1', async ({ page }) => {
+
+  await adminPage.goto("/wp-admin/admin.php?page=nx-dashboard");
+  await adminPage.locator('div').filter({ hasText: /^Add New$/ }).locator('a').click();
+  
+  
+  
   await adminPage.locator('div:nth-child(2) > .wprf-control-field > .wprf-control > .wprf-row > div:nth-child(2) > .wprf-input-radio-option > .wprf-input-label > .wprf-input-image').click();
   await adminPage.locator('span').filter({ hasText: /^Source$/ }).click();
   await adminPage.getByText('Comments', { exact: true }).click();
@@ -377,6 +428,15 @@ test('theme based tests 24', async ({ page }) => {
   await adminPage.locator('#source_section').getByText('Flashing Tab').click();
   await adminPage.getByRole('button', { name: 'Next' }).click();
   await adminPage.locator('#themes').getByRole('img').nth(2).click();
+});
+
+
+test('theme based tests 24.1', async ({ page }) => {
+
+  await adminPage.goto("/wp-admin/admin.php?page=nx-dashboard");
+  await adminPage.locator('div').filter({ hasText: /^Add New$/ }).locator('a').click();
+  
+  
   await adminPage.locator('span').filter({ hasText: /^Source$/ }).click();
   await adminPage.getByText('Growth Alert 🚀').click();
   await adminPage.locator('#source_section').getByRole('img').first().click();
